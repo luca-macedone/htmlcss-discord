@@ -42,6 +42,10 @@ strong {
     padding: 1rem;
 }
 
+svg {
+    margin-bottom: -4.3rem;
+    margin-top: 4.3rem;
+}
 /* #endregion common */
 
 /* #region utilities */
@@ -73,7 +77,7 @@ strong {
 
 
 .buttons {
-    margin-bottom: 5rem;
+    margin-bottom: 10rem;
 }
 
 .button {
@@ -81,6 +85,7 @@ strong {
 
     border: 0;
     border-radius: 2rem;
+    cursor: pointer;
 }
 
 .elem_img {
@@ -124,6 +129,13 @@ strong {
     text-decoration: none;
 }
 
+.wave_dark {
+    fill: var(--dr-white_darker);
+}
+
+.wave_light {
+    fill: var(--dr-white);
+}
 
 /* #region flex_utilities */
 
