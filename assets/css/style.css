@@ -38,6 +38,7 @@ p {
 /* #region utilities */
 .container {
     max-width: 1140px;
+    margin: auto;
 }
 
 .navbar_menu {
@@ -60,20 +61,12 @@ p {
     color: black;
 }
 
-.content_block {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.content {
-    width: 80%;
-    margin: 2rem 0;
-}
-
 .d_flex {
     display: flex;
+}
+
+.flex_wrap {
+    flex-wrap: wrap;
 }
 
 .justify_center {
@@ -113,10 +106,12 @@ p {
 
 .elem_img {
     width: 60%;
+    padding: 2rem;
 }
 
 .elem_text {
     width: 40%;
+    padding: 4rem;
 }
 
 .col_4 {
@@ -136,6 +131,16 @@ p {
 .margin_y_1 {
     margin-top: 1rem;
     margin-bottom: 1rem;
+}
+
+.padding_x_1 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.padding_y_4 {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
 }
 
 .text_center {
@@ -162,16 +167,12 @@ p {
     background-color: var(--dr-black);
 }
 
-.text_bigger {
+.text_big {
     font-size: 2.5rem;
 }
 
-.text_big {
-    font-size: 1.5rem;
-}
-
 .text_medium {
-    font-size: 1rem;
+    font-size: 1.1rem;
 }
 
 .text_small {
@@ -235,38 +236,25 @@ p {
     background-color: aqua;
 }
 
-.debug .content {
-    background-color: blue;
-    border: 2px dashed black;
+.debug section {
+    min-height: 20vh;
+    background-color: coral;
 }
 
-.debug #main_content {
-    height: 100%;
-    background-color: brown;
-}
-
-.debug #main_content .content {
-    height: 20rem;
-}
-
-.debug .content_block {
-    background-color: darkgray;
-    border: 2px dashed black;
-}
-
-.debug .content_block:nth-child(2) {
-    background-color: whitesmoke;
-    border: 2px dashed yellow;
+.debug .container {
+    min-height: 20vh;
+    background-color: yellowgreen;
 }
 
 .debug .elem_img {
-    height: 100%;
+    height: 20vh;
+
     background-color: burlywood;
     border: 2px dashed white;
 }
 
 .debug .elem_text {
-    height: 100%;
+    height: 20vh;
     background-color: cadetblue;
     border: 2px dashed white;
 }
@@ -274,15 +262,6 @@ p {
 .debug #download_banner {
     height: 40rem;
     border: 2px dashed green;
-}
-
-.debug #download_banner .content_block {
-    height: 100%;
-    border: none;
-}
-
-.debug #download_banner .content {
-    height: 90%;
 }
 
 .debug #footer {
@@ -370,14 +349,8 @@ p {
     width: 80%;
 }
 
-#main_content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-#main_content .content {
-    display: flex;
+#app_main section .elem_text {
+    gap: 1.8rem;
 }
 
 #download_banner {
