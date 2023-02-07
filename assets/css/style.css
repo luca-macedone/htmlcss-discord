@@ -33,6 +33,11 @@ p {
     line-height: 1.5rem;
 }
 
+strong {
+    font-size: 1.8rem;
+    padding: 1rem;
+}
+
 /* #endregion common */
 
 /* #region utilities */
@@ -60,6 +65,48 @@ p {
     text-decoration: none;
     color: black;
 }
+
+
+.buttons {
+    margin-bottom: 5rem;
+}
+
+.button {
+    padding: .8rem 1.2rem;
+
+    border: 0;
+    border-radius: 2rem;
+}
+
+.elem_img {
+    width: 60%;
+    padding: 2rem;
+}
+
+.elem_text {
+    width: 40%;
+    padding: 4rem;
+}
+
+.text_center {
+    text-align: center;
+}
+
+.image_big {
+    width: 100%;
+}
+
+.stars {
+    padding: 2rem;
+    
+    background-image: url("/assets/img/stars.svg");
+    background-position: top;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+
+/* #region flex_utilities */
 
 .d_flex {
     display: flex;
@@ -93,27 +140,9 @@ p {
     flex-direction: column-reverse;
 }
 
-.buttons {
-    margin-bottom: 5rem;
-}
+/* #endregion flex_utilities */
 
-.button {
-    padding: .8rem 1.2rem;
-
-    border: 0;
-    border-radius: 2rem;
-}
-
-.elem_img {
-    width: 60%;
-    padding: 2rem;
-}
-
-.elem_text {
-    width: 40%;
-    padding: 4rem;
-}
-
+/* #region columns_utilities */
 .col_4 {
     width: calc((100% / 12) * 4);
     margin-right: .5rem;
@@ -122,6 +151,9 @@ p {
 .col_2 {
     width: calc((100% / 12) * 2);
 }
+/* #endregion columns_utilities */
+
+/* #region margin_utilities */
 
 .margin_x_1 {
     margin-left: 1rem;
@@ -132,7 +164,9 @@ p {
     margin-top: 1rem;
     margin-bottom: 1rem;
 }
+/* #endregion margin_utilities */
 
+/* #region padding_utilities */
 .padding_x_1 {
     padding-left: 1rem;
     padding-right: 1rem;
@@ -143,10 +177,9 @@ p {
     padding-bottom: 4rem;
 }
 
-.text_center {
-    text-align: center;
-}
+/* #endregion padding_utilities */
 
+/* #region color_utilities */
 .color_white {
     color: var(--dr-white);
 }
@@ -167,6 +200,14 @@ p {
     background-color: var(--dr-black);
 }
 
+.bg_greyblue {
+    background-color: var(--dr-greyblue);
+}
+
+/* #endregion color_utilities */
+
+/* #region textsize_utilities */
+
 .text_big {
     font-size: 2.5rem;
 }
@@ -179,6 +220,7 @@ p {
     font-size: .8rem;
 }
 
+/* #endregion textsize_utilities */
 
 /* #endregion utilities */
 
@@ -351,6 +393,10 @@ p {
 
 #app_main section .elem_text {
     gap: 1.8rem;
+}
+
+#app_main section:last-child p {
+    width: 80%;
 }
 
 #download_banner {
