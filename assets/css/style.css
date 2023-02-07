@@ -21,6 +21,18 @@ hr {
     width: 100%;
 }
 
+nav {
+    padding: 2rem;
+}
+
+h1 {
+    margin: 5rem 0;
+}
+
+p {
+    line-height: 1.5rem;
+}
+
 /* #endregion common */
 
 /* #region utilities */
@@ -64,6 +76,14 @@ hr {
     display: flex;
 }
 
+.justify_center {
+    justify-content: center;
+}
+
+.align_center {
+    align-items: center;
+}
+
 .direction_row {
     flex-direction: row;
 }
@@ -78,6 +98,17 @@ hr {
 
 .direction_column_reverse {
     flex-direction: column-reverse;
+}
+
+.buttons {
+    margin-bottom: 5rem;
+}
+
+.button {
+    padding: .8rem 1.2rem;
+
+    border: 0;
+    border-radius: 2rem;
 }
 
 .elem_img {
@@ -97,6 +128,37 @@ hr {
     width: calc((100% / 12) * 2);
 }
 
+.margin_x_1 {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.margin_y_1 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.text_center {
+    text-align: center;
+}
+
+.color_white {
+    color: var(--dr-white);
+}
+
+.color_black {
+    color: var(--dr-black);
+}
+
+.bg_white {
+    background-color: var(--dr-white);
+}
+.bg_white_darker {
+    background-color: var(--dr-white_darker);
+}
+.bg_black {
+    background-color: var(--dr-black);
+}
 /* #endregion utilities */
 
 /* #region debug */
@@ -239,6 +301,11 @@ hr {
 #app_header {
     display: flex;
     justify-content: center;
+
+    background-image: url("/assets/img/jumbo.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 #app_main {
@@ -275,6 +342,12 @@ hr {
 
 #jumbotron .content {
     width: 70%;
+
+    gap: 1rem;
+}
+
+#jumbotron p {
+    width: 80%;
 }
 
 #main_content {

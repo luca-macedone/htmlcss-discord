@@ -8,32 +8,34 @@
 
     <title>Discord | Boolean</title>
   </head>
-  <body class="debug">
+  <body class="">
     <header id="app_header">
       <div class="container direction_column">
         <div id="navbar">
-          <div class="logo">logo</div>
+          <div class="logo">
+            <img src="/assets/img/logo.svg" alt="Discord logo">
+          </div>
           <!-- /#logo -->
           <nav>
             <ul class="navbar_menu">
               <li>
-                <a href="" class="navbar_link">Scarica</a>
+                <a href="" class="navbar_link color_white">Scarica</a>
                 <!-- /.navbar_link -->
               </li>
               <li>
-                <a href="" class="navbar_link">Perché Discord</a>
+                <a href="" class="navbar_link color_white">Perché Discord</a>
                 <!-- /.navbar_link -->
               </li>
               <li>
-                <a href="" class="navbar_link">Nitro</a>
+                <a href="" class="navbar_link color_white">Nitro</a>
                 <!-- /.navbar_link -->
               </li>
               <li>
-                <a href="" class="navbar_link">Sicurezza</a>
+                <a href="" class="navbar_link color_white">Sicurezza</a>
                 <!-- /.navbar_link -->
               </li>
               <li>
-                <a href="" class="navbar_link">Assistenza</a>
+                <a href="" class="navbar_link color_white">Assistenza</a>
                 <!-- /.navbar_link -->
               </li>
             </ul>
@@ -45,13 +47,15 @@
         </div>
         <!-- /#navbar -->
         <div id="jumbotron">
-          <div class="content d_flex direction_column">
-            <h1>Il tuo posto per parlare</h1>
-            <p>
+          <div class="content d_flex direction_column justify_center align_center">
+            <h1 class="color_white text_center">Il tuo posto per parlare</h1>
+            <p class="color_white text_center margin_y_1">
               Che tu faccia parte di un club scolastico, gruppo di gamer, comunità artistica mondiale, o semplicemente di un piccolo gruppo di amici che vuole passare il tempo assieme, Discord rende più facile chiaccherare ogni giorno e ritrovarsi più spesso.
             </p>
-            <button>Scarica per Mac</button>
-            <button>Apri Discord nel tuo browser</button>
+            <div class="buttons">
+              <button class="button color_black margin_x_1" id="mac_download">&darr; Scarica per Mac</button>
+              <button class="button color_white bg_black margin_x_1" id="browser_open">Apri Discord nel tuo browser</button>
+            </div>
           </div>
           <!-- /.content -->
         </div>
