@@ -5,7 +5,10 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Style -->
   <link rel="stylesheet" href="./assets/css/style.css" />
+  <!-- Font_Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" crossorigin="anonymous">
 
   <title>Discord | Boolean</title>
 </head>
@@ -150,28 +153,142 @@
     <!-- /section -->
   </main>
   <!-- /#app_main -->
-  <footer id="app_footer">
+  <footer class="bg_black" id="app_footer">
     <div class="container">
-      <div class="direction_column" id="footer">
-        <div id="footer_top">
-          <div class="col_4"></div>
+      <div class="direction_column justify_center align_center" id="footer">
+        <div class="d_flex direction_row align_start" id="footer_top">
+          <div class="col_4">
+            <h2 class="text_big color_greyblue">
+              Il tuo posto per parlare
+            </h2>
+            <!-- /h2 -->
+            <p class="color_white margin_y_1" id="language_selector">
+              Italiano 
+              <span>
+                <i class="fa-solid fa-caret-down"></i>
+              </span>
+            </p>
+            <!-- /p -->
+            <div class="icons d_flex direction_row justify_between align_center color_white text_medium margin_y_1">
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-youtube"></i>
+            </div>
+            <!-- /.icons -->
+          </div>
           <!-- /.col_4 -->
-          <div class="col_2"></div>
+          <div class="col_2">
+            <h4 class="color_greyblue">Prodotto</h4>
+            <ul class="footer_list">
+              <li>
+                <a class="color_white link" href="#">Scarica</a>
+              </li>
+              <li>
+                <a class="color_white link" href="#">Perché Discord</a>
+              </li>
+              <li>
+                <a class="color_white link" href="#">Nitro</a>
+              </li>
+              <li>
+                <a class="color_white link" href="#">Sicurezza</a>
+              </li>
+              <li>
+                <a class="color_white link" href="#">Assistenza</a>
+              </li>
+            </ul>
+            <!-- /.footer_list -->
+          </div>
           <!-- /.col_2 -->
-          <div class="col_2"></div>
+          <div class="col_2">
+            <h4 class="color_greyblue">Compagnia</h4>
+            <ul class="footer_list">
+              <li>
+                <a class="color_white link" href="#">Chi siamo</a>
+              </li>
+              <li>
+                <a class="color_white link" href="#">Lavora con noi</a>
+              </li>
+              <li>
+                <a class="color_white link" href="#">Marchio</a>
+              </li>
+              <li>
+                <a class="color_white link" href="#">Redazione</a>
+              </li>
+              <li>
+                <a class="color_white link" href="#">Negozio</a>
+              </li>
+            </ul>
+            <!-- /.footer_list -->
+          </div>
           <!-- /.col_2 -->
-          <div class="col_2"></div>
+          <div class="col_2">
+            <h4 class="color_greyblue">Risorse</h4>
+            <ul class="footer_list">
+              <li>
+                <a class="color_white link" href="#">Scarica</a>
+              </li>
+              <li>
+                <a class="color_white link" href="#">Perché Discord</a>
+              </li>
+              <li>
+                <a class="color_white link" href="#">Nitro</a>
+              </li>
+              <li>
+                <a class="color_white link" href="#">Sicurezza</a>
+              </li>
+              <li>
+                <a class="color_white link" href="#">Assistenza</a>
+              </li>
+              <li>
+                <a class="color_white link" href="#">Scarica</a>
+              </li>
+              <li>
+                <a class="color_white link" href="#">Perché Discord</a>
+              </li>
+              <li>
+                <a class="color_white link" href="#">Sicurezza</a>
+              </li>
+              <li>
+                <a class="color_white link" href="#">Assistenza</a>
+              </li>
+              <li>
+                <a class="color_white link" href="#">Assistenza</a>
+              </li>
+            </ul>
+            <!-- /.footer_list -->
+          </div>
           <!-- /.col_2 -->
-          <div class="col_2"></div>
+          <div class="col_2">
+            <h4 class="color_greyblue">Norme</h4>
+            <ul class="footer_list">
+              <li>
+                <a class="color_white link" href="#">Scarica</a>
+              </li>
+              <li>
+                <a class="color_white link" href="#">Perché Discord</a>
+              </li>
+              <li>
+                <a class="color_white link" href="#">Nitro</a>
+              </li>
+              <li>
+                <a class="color_white link" href="#">Sicurezza</a>
+              </li>
+              <li>
+                <a class="color_white link" href="#">Assistenza</a>
+              </li>
+            </ul>
+            <!-- /.footer_list -->
+          </div>
           <!-- /.col_2 -->
         </div>
         <!-- /#footer_top -->
-        <hr />
-
-        <div id="footer_bottom">
-          <div class="logo">logo</div>
+        <div class="d_flex justify_between" id="footer_bottom">
+          <div class="logo">
+            <img src="/assets/img/logo.svg" alt="Discord logo">
+          </div>
           <!-- /.logo -->
-          <button class="button" id="register_btn">register</button>
+          <button class="button bg_greyblue color_white" id="register_btn">Registrati</button>
           <!-- /#register_btn.button -->
         </div>
         <!-- /#footer_bottom -->
